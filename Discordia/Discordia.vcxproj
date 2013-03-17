@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83292E29-BC1F-47D9-8719-0A4FC319C36D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\dev\others\SDL-1.2.15\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DISCORDIA_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL.lib;opengl32.lib;glu32.lib;glee.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Discordia.dll</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Discordia.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)Discordia.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\dev\others\SDL-1.2.15\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DISCORDIA_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Discordia.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)Discordia.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BitmapLoaderGLAux.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="IBufferObject.h" />
+    <ClInclude Include="IGPUProgram.h" />
+    <ClInclude Include="IPixelBuffer.h" />
+    <ClInclude Include="IRenderDevice.h" />
+    <ClInclude Include="IShaderObject.h" />
+    <ClInclude Include="ITexture.h" />
+    <ClInclude Include="RenderDeviceStub.h" />
+    <ClInclude Include="RenderEnviorment.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="GLSlangPixelShader.h" />
+    <ClInclude Include="GLSlangProgram.h" />
+    <ClInclude Include="GLSlangShaderObject.h" />
+    <ClInclude Include="GLSlangVertexShader.h" />
+    <ClInclude Include="OpenGLIndexBuffer.h" />
+    <ClInclude Include="OpenGLRenderDevice.h" />
+    <ClInclude Include="OpenGLResourceManager.h" />
+    <ClInclude Include="OpenGLTexture.h" />
+    <ClInclude Include="OpenGLVertexBuffer.h" />
+    <ClInclude Include="Win32OGLPixelBuffer.h" />
+    <ClInclude Include="IResourceManager.h" />
+    <ClInclude Include="ISurface.h" />
+    <ClInclude Include="ISurfaceCodec.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="SurfaceLoader.h" />
+    <ClInclude Include="BMPCodec.h" />
+    <ClInclude Include="TGACodec.h" />
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="Dimension2D.h" />
+    <ClInclude Include="Discordia.h" />
+    <ClInclude Include="DiscordiaDeviceStub.h" />
+    <ClInclude Include="IDiscordiaDevice.h" />
+    <ClInclude Include="IEventListener.h" />
+    <ClInclude Include="ILogTarget.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="Matrix4.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="TextLogger.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="DiscordiaDeviceWin32.h" />
+    <ClInclude Include="DiscordiaDeviceLinux.h" />
+    <ClInclude Include="BoxNode.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GeometryChunk.h" />
+    <ClInclude Include="ICamera.h" />
+    <ClInclude Include="IGeometryNode.h" />
+    <ClInclude Include="ISceneManager.h" />
+    <ClInclude Include="ISceneNode.h" />
+    <ClInclude Include="NSEHeightmapWater.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SceneViewCamera.h" />
+    <ClInclude Include="ViewFrustum.h" />
+    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="IFileReader.h" />
+    <ClInclude Include="IVirtualFileSystem.h" />
+    <ClInclude Include="IShaderSystem.h" />
+    <ClInclude Include="RenderQueue.h" />
+    <ClInclude Include="ShaderSystem.h" />
+    <ClInclude Include="NSEWaterSolver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BitmapLoaderGLAux.cpp" />
+    <ClCompile Include="RenderDeviceStub.cpp" />
+    <ClCompile Include="GLSlangProgram.cpp" />
+    <ClCompile Include="GLSlangShaderObject.cpp" />
+    <ClCompile Include="OpenGLIndexBuffer.cpp" />
+    <ClCompile Include="OpenGLRenderDevice.cpp" />
+    <ClCompile Include="OpenGLResourceManager.cpp" />
+    <ClCompile Include="OpenGLTexture.cpp" />
+    <ClCompile Include="OpenGLVertexBuffer.cpp" />
+    <ClCompile Include="Win32OGLPixelBuffer.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Surface.cpp" />
+    <ClCompile Include="SurfaceLoader.cpp" />
+    <ClCompile Include="BMPCodec.cpp" />
+    <ClCompile Include="TGACodec.cpp" />
+    <ClCompile Include="Discordia.cpp" />
+    <ClCompile Include="DiscordiaDeviceStub.cpp" />
+    <ClCompile Include="DiscordiaDeviceWin32.cpp" />
+    <ClCompile Include="DiscordiaDeviceLinux.cpp" />
+    <ClCompile Include="BoxNode.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="NSEHeightmapWater.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SceneViewCamera.cpp" />
+    <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="RenderQueue.cpp" />
+    <ClCompile Include="ShaderSystem.cpp" />
+    <ClCompile Include="NSEWaterSolver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\water.frag" />
+    <None Include="..\data\water.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

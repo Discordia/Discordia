@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Discordia", "Discordia\Discordia.vcxproj", "{83292E29-BC1F-47D9-8719-0A4FC319C36D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WaterDemo", "WaterDemo\WaterDemo.vcxproj", "{A2A36E8E-1027-46B3-9BE1-CE1E11DED2A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83292E29-BC1F-47D9-8719-0A4FC319C36D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{83292E29-BC1F-47D9-8719-0A4FC319C36D}.Release|Win32.ActiveCfg = Release|Win32
+		{A2A36E8E-1027-46B3-9BE1-CE1E11DED2A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2A36E8E-1027-46B3-9BE1-CE1E11DED2A2}.Debug|Win32.Build.0 = Debug|Win32
+		{A2A36E8E-1027-46B3-9BE1-CE1E11DED2A2}.Release|Win32.ActiveCfg = Release|Win32
+		{A2A36E8E-1027-46B3-9BE1-CE1E11DED2A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

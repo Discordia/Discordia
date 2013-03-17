@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{18891faf-18f6-4d4b-a3cb-2ee860b98247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer">
+      <UniqueIdentifier>{ad7b7c67-3c8f-466e-a993-462faca221c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer\OpenGL">
+      <UniqueIdentifier>{2ae53da0-1264-47b1-a2f8-d5f1ebbdd070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer\OpenGL\Win32">
+      <UniqueIdentifier>{6936e26b-facf-44fd-b06f-0621f14fda86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer\DirectX9">
+      <UniqueIdentifier>{93a7fe01-f33d-4ca1-a82f-3e9714169201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Resource management">
+      <UniqueIdentifier>{4e0b10fb-82e2-4b26-8b01-19363bb518ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Resource management\Codec">
+      <UniqueIdentifier>{ada68564-2b05-4a95-bf22-bb9e01d1c164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Discordia">
+      <UniqueIdentifier>{af1fcc67-1f06-4623-a1c1-e811ca4940d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Discordia\WIN32">
+      <UniqueIdentifier>{40f1e963-07be-4625-9489-a7fc15ddab3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Discordia\Linux">
+      <UniqueIdentifier>{f353af83-c8d2-4b8a-8f3d-a92ac372a7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e330ece0-5a58-414e-b09f-efea06577ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{9844a459-5df7-4ae3-abd7-50cbab71f425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{14268f0e-8978-4a67-bc4b-d114c35dd687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Shaders">
+      <UniqueIdentifier>{da64b3cd-3c0e-4a01-b197-3270ea7b3856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physic">
+      <UniqueIdentifier>{30706eb8-04ac-4dd6-bf5f-544518df23ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Color.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="IBufferObject.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="IGPUProgram.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="IPixelBuffer.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderDevice.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="IShaderObject.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ITexture.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderDeviceStub.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEnviorment.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSlangPixelShader.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSlangProgram.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSlangShaderObject.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSlangVertexShader.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLIndexBuffer.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLRenderDevice.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLResourceManager.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLTexture.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLVertexBuffer.h">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32OGLPixelBuffer.h">
+      <Filter>Graphics\Renderer\OpenGL\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="IResourceManager.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+    <ClInclude Include="ISurface.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+    <ClInclude Include="ISurfaceCodec.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceLoader.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+    <ClInclude Include="BMPCodec.h">
+      <Filter>Graphics\Resource management\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="TGACodec.h">
+      <Filter>Graphics\Resource management\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Dimension2D.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Discordia.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscordiaDeviceStub.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="IDiscordiaDevice.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="IEventListener.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="ILogTarget.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="TextLogger.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Discordia</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscordiaDeviceWin32.h">
+      <Filter>Discordia\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscordiaDeviceLinux.h">
+      <Filter>Discordia\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryChunk.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ICamera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="IGeometryNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ISceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ISceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="NSEHeightmapWater.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneViewCamera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewFrustum.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IFileReader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IVirtualFileSystem.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IShaderSystem.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderSystem.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="NSEWaterSolver.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapLoaderGLAux.h">
+      <Filter>Graphics\Resource management</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RenderDeviceStub.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSlangProgram.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSlangShaderObject.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLIndexBuffer.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLRenderDevice.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLResourceManager.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLTexture.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLVertexBuffer.cpp">
+      <Filter>Graphics\Renderer\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32OGLPixelBuffer.cpp">
+      <Filter>Graphics\Renderer\OpenGL\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Graphics\Resource management</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Graphics\Resource management</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceLoader.cpp">
+      <Filter>Graphics\Resource management</Filter>
+    </ClCompile>
+    <ClCompile Include="BMPCodec.cpp">
+      <Filter>Graphics\Resource management\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="TGACodec.cpp">
+      <Filter>Graphics\Resource management\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="Discordia.cpp">
+      <Filter>Discordia</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscordiaDeviceStub.cpp">
+      <Filter>Discordia</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscordiaDeviceWin32.cpp">
+      <Filter>Discordia\WIN32</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscordiaDeviceLinux.cpp">
+      <Filter>Discordia\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NSEHeightmapWater.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneViewCamera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FileReader.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderSystem.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="NSEWaterSolver.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapLoaderGLAux.cpp">
+      <Filter>Graphics\Resource management</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\water.frag">
+      <Filter>Shader\Shaders</Filter>
+    </None>
+    <None Include="..\data\water.vert">
+      <Filter>Shader\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
