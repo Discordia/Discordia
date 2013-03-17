@@ -2,7 +2,9 @@ Discordia Water Demo
 =========================================
 
 This is a work test that I did in the begining of 2005, with OpenGL pixel and vertex shaders. It is a scene that has a few textured boxes and a transparent water plane. When the user clicks and drags the mouse over the water plane there are waves created. The water plane is implemented by an approximation of Navier-Stockes equations. The code for the Navier-Stockes solver has not been written by me but by YannL, moderator at Gamedev in 2005. His code code be found at these links once upon a time, but they seem to be dead now:
+
 http://membres.lycos.fr/ylmb/source/solver.h
+
 http://membres.lycos.fr/ylmb/source/solver.cpp
 
 Building and running
