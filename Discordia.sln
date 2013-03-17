@@ -3,6 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Discordia", "Discordia\Discordia.vcxproj", "{83292E29-BC1F-47D9-8719-0A4FC319C36D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WaterDemo", "WaterDemo\WaterDemo.vcxproj", "{A2A36E8E-1027-46B3-9BE1-CE1E11DED2A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{83292E29-BC1F-47D9-8719-0A4FC319C36D} = {83292E29-BC1F-47D9-8719-0A4FC319C36D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

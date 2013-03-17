@@ -1,0 +1,10 @@
+*.dll
+*.ilk
+*.lib
+*.pdb
+*.txt
+*.exp
+Discordia/Debug
+WaterDemo/Debug
+*.opensdf
+*.exe
